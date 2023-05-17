@@ -1,104 +1,145 @@
-*{
+* {
     padding: 0; /*tarayıcının bize varsayılan olarak sunduğu margin ve padding değerlerini sıfırladık*/
     margin: 0;
-   
-}
-
-body{
+    box-sizing: border-box;
+  }
+  body {
     background-color: bisque;
-}
-
-.tepe{
+  }
+  #siteadı {
+    text-decoration: none;
+    color: black;
+  }
+  .tepe {
     background-color: rgb(216, 196, 82);
     width: 100%;
     height: 110px;
     color: #4d3304;
-    position: relative; /*en geniş div'imiz bu olduğu için içindeki divleri hareket ettirebilmemiz için bunu yazmak zorundayız. fixed'da yazabilirdik */ */
-}
-
-
-
-.tepe #tepe1,#tepe2,#tepe3,#tepe4 {
-    margin-top: 0px; /*yukarıdaki margin açıklığını kapattık*/
-    display: inline; /* divler block elementi olduğu için yer kaplıyordu bunları inlince element yaptık */ 
-    float: right; /*tepe1,2,3,4 divlerini tepe class'ında en sağa çektik*/
-    width: 100px;
-    height: 30px;
-    text-align: center; /* divin içindeki yazıları div kutusunda ortaya çektik */ 
-    position: relative; /* bu ve altındaki satırla tepe1,2,3,4 id'li div'leri aşşağıya yasladık*/
-    top: 80px;
-    font-size: 20px; /*yazıların boyutunu ayarladık*/
-    font-weight: bold; /*kalın yaptık yazıları*/ 
-    margin-right: 5px ; /* sağdan  boşluk verdik.*/
-}
-
-
-.teperight{
+    position: relative; /*en geniş div'imiz bu olduğu için içindeki divleri hareket ettirebilmemiz için bunu yazmak zorundayız. fixed'da yazabilirdik */
+  }
+  .login {
+    display: flex;
+    width: 700px;
+    height: 110px;
+    margin-left: auto; /* containeri içindeki içerikleri containerin en sağından başalattık */
+    justify-content: center; /* sağa tarafa içindeki divleri attık */
+    align-items: center;
+    cursor: pointer;
+  }
+  .login a {
+    text-decoration: none;
+  }
+  .login a div {
+    text-align: center;
+    font-size: 35px;
+  }
+  .login .input {
+    width: 194px;
+    height: 34px;
+  }
+  .login .buton {
+    width: 22px;
+    height: 22px;
+    margin: 0px;
+  }
+  .giriş,
+  .kayıt,
+  .arama {
+    /* border:1px solid   #4d3304; */
+    width: 234px;
+    color: bisque;
+  }
+  .teperight {
     color: black;
     font-family: fantasy;
+    font-size: 20px;
     display: inline-block;
-    width: 160px;   
-    height: 40px; 
-    position: relative;
-    left: 30px;
+    width: 200px;
+    height: 40px;
+    position: absolute;
+    left: 400px;
     top: 30px;
-
-} 
-
-.tepe .aramabutonu img{ 
-    width : 18.4px; 
-    height: 18.4px; 
-    border-color: black;
-    border-style: solid;
-    border-width: 1px;
+  }
+  #sidebar {
+    position: fixed;
+    background-color: #d49b20;
+    width: 400px;
+    height: 100%;
+    text-align: right;
+    right: -400px;
+  }
+  #sidebar.active {
+    right: 0;
+  }
+  #sidebar ul li {
+    list-style: none;
+    padding: 40px 40px;
+    border-bottom: 1px solid bisque;
+    cursor: pointer;
+    transition: all 0.5s linear;
+  }
+  #sidebar ul li:hover {
+    background-color: #d49b80;
+  }
+  #sidebar ul a {
+    text-decoration: none;
+  }
+  #sidebar ul a li {
+    text-decoration: none;
+    color: bisque;
+    font-size: 25px;
+    font-family: sans-serif;
+  }
+  .menubutton {
+    width: 50px;
+    height: 50px;
     position: absolute;
-    right: 420px;
-    top: 84px;
-}
-
-.tepe .aramabutonu input{
-    height: 16.8px;
-    width: 146.8px;
-    position: absolute;
-    right: 440px;
-    top: 84px;
-}
-
-.welcome{
+    right: 400px;
+    top: 0px;
+    background-color: #d49b20;
+  }
+  .welcome {
     /* text-align: center; */
     display: inline-block;
-    font-size: 40px;
+    font-size: 60px;
     font-weight: bolder;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, "Times New Roman", Times, serif;
     color: deepskyblue;
     position: relative;
     top: 40px;
     left: 80px;
-    width: 530px;
-    height: 60px;
-
-}
-
-.cv{
+    width: 800px;
+    height: 80px;
+  }
+  .explanation {
+    display: inline-block;
+    width: 960px;
+    height: 120px;
+    position: absolute;
+    top: 300px;
+    left: 100px;
+    font-size: 30px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  .cv {
     background-color: #4d3304;
-    color:coral;    
+    color: coral;
     border-radius: 50%;
     width: 150px;
     height: 150px;
     text-align: center;
     position: absolute;
-    top: 450px;
-    left: 600px;
+    top: 480px;
+    left: 800px;
     font-size: large;
     font-size: 25px;
-}
-
-.cv strong{
+  }
+  .cv strong {
     position: relative;
     top: 50px;
-}
-
-.ozgecmis{
+  }
+  .ozgecmis {
     height: 150px;
     width: 150px;
     background-color: #4d3304;
@@ -106,37 +147,67 @@ body{
     text-align: center;
     border-radius: 50%;
     position: absolute;
-    top: 450px;
-    left: 400px;
+    top: 480px;
+    left: 600px;
     font-size: large;
     font-size: 25px;
-}
-
-.ozgecmis strong{
+  }
+  .ozgecmis strong {
     position: relative;
-    top: 50px;
-}
-
-.myprof{
-    display: inline-block;
+    top: 40px;
+  }
+  .myprof {
+    box-sizing: border-box;
+    display: flex;
     width: 500px;
     height: 500px;
     border-style: solid;
-    border-radius: 50%;
+    border-radius: 20%;
     position: absolute;
     right: 400px;
     top: 160px;
-}
-
-.myprof img{
-    border-radius: 50%;
-}
-
-
-
-/* .iletisim{
-    background-color: aqua;
-    width: 1500;
-    height: 100;
-
-} */
+  }
+  .myprof img {
+    box-sizing: border-box;
+    border-radius: 20%;
+    width: 495px;
+    height: 495px;
+  }
+  .map {
+    width: 300px;
+    height: 350px;
+    position: absolute;
+    bottom: 94px;
+  }
+  .maps {
+    position: absolute;
+    bottom: 450px;
+    font-size: 45px;
+    font-family: "Times New Roman", Times, serif;
+    text-decoration: underline;
+  }
+  .mapadresi {
+    text-decoration: overline;
+  }
+  .iletisim {
+    display: flex;
+    background-color: beige;
+    width: 100%;
+    height: 60;
+    position: absolute;
+    bottom: 0px;
+    flex-direction: row;
+  }
+  .iletisim h1 {
+    margin-right: 380px;
+  }
+  .iletisim .box0 a:link {
+    text-decoration: none;
+    color: darkblue;
+  }
+  #maka {
+    background-color: black;
+    width: 50px;
+    height: 50px;
+  }
+  

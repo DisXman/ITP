@@ -2,66 +2,122 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <title>MY WEBSITE</title>
-    <link rel="stylesheet" href="css.css">
+    <title>First Page</title>
+    <link rel="stylesheet" href="css.css" />
   </head>
-
 
   <body>
     <div class="tepe">
-
-      <div id="tepe1">hakkımızda</div>
-      <div id="tepe2">özgeçmiş</div>
-      <div id="tepe3">iletişim</div>
-      <div id="tepe4">cv</div>
-
-      
-      
-      <div class="teperight">
-        <h1>MY WEBSITE</h1>
-      </div> 
-     
-     
-     
-      <div class="aramabutonu">
-        <form style="display: inline-block;">
-          <input type="text" id="" placeholder="Arama" class="input">
-          <img src="/foto video/aramabutonu.png" alt="yok" class="buton"/>
+      <div class="login">
+        <form class="arama">
+          <input
+            type="text"
+            placeholder="Arama"
+            class="input"
+            style="font-size: 15px"
+          />
+          <img
+            src="/foto video/aramabutonu.png"
+            alt="Fotoğraf Bulunamadı."
+            class="buton"
+          />
         </form>
+        <a href="#">
+          <div class="kayıt">Giriş</div>
+        </a>
+        <a href="#">
+          <div class="giriş">Kayıt Ol</div>
+        </a>
       </div>
- 
-      
+      <div class="teperight">
+        <a href="html.html" id="siteadı"><h1>MY WEBSITE</h1></a>
+      </div>
+
+      <div id="sidebar">
+        <ul>
+          <a href="makale.html"><li>Makale</li></a>
+          <a href="haber.html"> <li>Haberler</li></a>
+          <a href="galeri.html"><li>Fotoğraf ve Video Galeri-Animasyon</li></a>
+        </ul>
+
+        <div class="menubutton" onclick="menuackapa()">
+          <a href="#">
+            <img
+              src="/foto video/menuicon.png"
+              alt="Fotoğraf  Bulunamadı."
+              width="55"
+              height="55"
+            />
+          </a>
+        </div>
+      </div>
     </div>
 
-    <div class="welcome">
-      Welcome To My Website
+    <div class="welcome">Welcome To My Website</div>
+
+    <div class="explanation">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta earum
+      expedita facilis necessitatibus dolore quod. Quis quo natus aliquam autem.
     </div>
 
-    <div class="cv">
-      <STRONG>CV</STRONG>    
-    </div>
+    <a href="/foto video/CV.pdf" download>
+      <div class="cv">
+        <strong>CV</strong>
+      </div>
+    </a>
 
-    <div class="ozgecmis">
-      <strong>ÖZGEÇMİŞ</strong>
-    </div>
+    <a href="https://github.com/DisXman" target="_blank">
+      <div class="ozgecmis">
+        <strong>MY PROJECT</strong>
+      </div>
+    </a>
 
     <div class="myprof">
-      <img src="/foto video/png-transparent-logo-html-html5.png" alt="Resim Bulunamadı." width="500" height="500"/>
+      <img src="/foto video/png-transparent-logo-html-html5.png" alt="Fotoğraf Bulunamadı." />
     </div>
 
-    <!-- <div class="iletisim">
-      <ol>
-        <li>telefon</li>
-        <li>eposta</li>
-      </ol>
+    <a
+      href="https://www.google.com/maps?q=band%C4%B1rma+17+eyl%C3%BCl+%C3%BCniversitesi&um=1&ie=UTF-8&sa=X&ved=2ahUKEwiDk-CT2_n-AhVkSvEDHRjVBqMQ_AUoAnoECAIQBA"
+      class="mapadresi"
+      target="_blank"
+    >
+      <p class="maps">Adrese git</p>
+    </a>
 
-    </div> -->
+    <div class="map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12164.882400218108!2d27.916946287158193!3d40.33745210000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14b5d4a80f94f805%3A0x9901064bc5b1c83!2sBand%C4%B1rma%20Onyedi%20Eyl%C3%BCl%20%C3%9Cniversitesi!5e0!3m2!1str!2str!4v1684235055934!5m2!1str!2str"
+        width="300"
+        height="350"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
 
+    <div class="iletisim">
+      <h1 class="box0">
+        E-posta
+        <a href="mailto:emreozermis@hotmailcom">emreozermis@hotmail.com</a>
+      </h1>
+      <h1 class="box1">Telefon 05372484315</h1>
+      <h1 class="box2">
+        LinkedIn
+        <a
+          href="https://www.linkedin.com/in/emre-%C3%B6zermi%C5%9F-479737234/"
+          target="_blank"
+        >
+          <img
+            src="/foto video/linkedin.png"
+            alt="Fotoğraf Bulunamadı."
+            width="50"
+            height="50"
+          />
+        </a>
+      </h1>
+    </div>
 
-
-
-
+    <script src="javascript.js"></script>
   </body>
-
-
 </html>
