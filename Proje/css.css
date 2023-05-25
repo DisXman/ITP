@@ -61,7 +61,7 @@
     top: 30px;
   }
   #sidebar {
-    position: fixed;
+    position:fixed;
     background-color: #d49b20;
     width: 400px;
     height: 100%;
@@ -207,7 +207,116 @@
   }
   #maka {
     background-color: black;
-    width: 50px;
-    height: 50px;
+    width: 1404px;
+    height: 1000px;
+    display: flex;
+    margin-left: 50px;
+    margin-top: 50px;
+    flex-direction: column;
+    padding: 10px;
+    
   }
-  
+  #maka>.habera,.haberb,.haberc{
+    display: flex;
+    width: 1361px;
+    height: 450px;
+    background-color: white;
+    margin: 10px;
+    position: relative;   /*bu kod "haberin devamı" kısmını beyaz kutunun(div'in) içerisinde istediğimiz yere koymamızı sağladı  BURASI ÖNEMLİ*/
+                          /*eğer ki bu kodu "#maka" kısmını yazsaydık siyah kutu içerisinde yerleştirmek zorunda kalacaktık ama şimdi "#maka>.habera,.haberb,.haberc" bunun içerisinde yerleştirme yapıyoruz*/
+  }
+
+
+
+  #maka>.habera>#makale_zeka{  /*habera'nın fotoğraf kısmı*/
+    width: 1155px;
+    height: 310px;
+    padding: 1px;
+  }
+  #maka>.habera>p{
+    display: flex;
+    align-items: center;
+    text-decoration: underline;
+    font-size: 40px;
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  #maka>.habera>a{
+    display: flex;
+    width: 99px;
+    height: 100px;
+    text-decoration: none;
+    font-style: italic;
+    align-items: end;
+    font-size: 20px;
+    padding:10px;
+    position: absolute;  /*bu satırdan itibaren 5 satır "haberin devamı" div'ini beyaz kutu içerisinde sol alta koymamıza yarıyor*/
+    bottom: 0px;
+    right: 0px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+
+
+
+  #maka>.haberb>#makale_nikola{
+    width: 900px;
+    height: 310px;
+    padding: 1px;
+  }
+  #maka>.haberb>p{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  #maka>.haberb>a{
+    display: flex;
+    width: 99px;
+    height: 100px;
+    text-decoration: none;
+    font-style: italic;
+    align-items: end;
+    font-size: 20px;
+    padding: 10px;
+    position: absolute; /*bu satırdan itibaren 5 satır "haberin devamı" div'ini beyaz kutu içerisinde sol alta koymamıza yarıyor*/
+    bottom: 0px;
+    right: 0px;
+    margin-right: 10px;
+    margin-bottom: 10px;  
+  }
+
+
+
+
+  #maka>.haberc>#makale_bant{
+    width: 900px;
+    height: 310px;
+    padding: 1px;
+  }
+  #maka>.haberc>p{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  #maka>.haberc>a{
+    display: flex;
+    height: 100px;
+    width: 99px;
+    text-decoration: none;
+    font-style: italic;
+    align-items: end;
+    justify-content: end;
+    font-size: 20px;
+    padding: 10px;
+    position: absolute;  /*bu satırdan itibaren 5 satır "haberin devamı" div'ini beyaz kutu içerisinde sol alta koymamıza yarıyor*/
+    bottom: 0px;
+    right: 0px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
