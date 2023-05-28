@@ -15,14 +15,14 @@
     width: 100%;
     height: 110px;
     color: #4d3304;
-    position: relative; /*en geniş div'imiz bu olduğu için içindeki divleri hareket ettirebilmemiz için bunu yazmak zorundayız. fixed'da yazabilirdik */
+    position: relative; 
   }
   .login {
     display: flex;
     width: 700px;
     height: 110px;
-    margin-left: auto; /* containeri içindeki içerikleri containerin en sağından başalattık */
-    justify-content: center; /* sağa tarafa içindeki divleri attık */
+    margin-left: auto; 
+    justify-content: center; 
     align-items: center;
     cursor: pointer;
   }
@@ -45,7 +45,7 @@
   .giriş,
   .kayıt,
   .arama {
-    /* border:1px solid   #4d3304; */
+
     width: 234px;
     color: bisque;
   }
@@ -61,6 +61,7 @@
     top: 30px;
   }
   #sidebar {
+    z-index: 2;
     position:fixed;
     background-color: #d49b20;
     width: 400px;
@@ -99,7 +100,7 @@
     background-color: #d49b20;
   }
   .welcome {
-    /* text-align: center; */
+
     display: inline-block;
     font-size: 60px;
     font-weight: bolder;
@@ -164,7 +165,7 @@
     border-style: solid;
     border-radius: 20%;
     position: absolute;
-    right: 400px;
+    right: 360px;
     top: 160px;
   }
   .myprof img {
@@ -225,9 +226,7 @@
     position: relative;   /*bu kod "haberin devamı" kısmını beyaz kutunun(div'in) içerisinde istediğimiz yere koymamızı sağladı  BURASI ÖNEMLİ*/
                           /*eğer ki bu kodu "#maka" kısmını yazsaydık siyah kutu içerisinde yerleştirmek zorunda kalacaktık ama şimdi "#maka>.habera,.haberb,.haberc" bunun içerisinde yerleştirme yapıyoruz*/
   }
-
-
-
+  /*A HABERİ*/
   #maka>.habera>#makale_zeka{  /*habera'nın fotoğraf kısmı*/
     width: 1155px;
     height: 310px;
@@ -256,9 +255,7 @@
     margin-right: 10px;
     margin-bottom: 10px;
   }
-
-
-
+  /*B HABERİ*/
   #maka>.haberb>#makale_nikola{
     width: 900px;
     height: 310px;
@@ -287,10 +284,7 @@
     margin-right: 10px;
     margin-bottom: 10px;  
   }
-
-
-
-
+  /*C HABERİ*/
   #maka>.haberc>#makale_bant{
     width: 900px;
     height: 310px;
@@ -320,3 +314,541 @@
     margin-right: 10px;
     margin-bottom: 10px;
   }
+  /*MAKALE 1*/
+  .makalebir{
+    display: flex;
+    background-color: bisque;
+    width: 1404px;
+    height: 2200px;
+    margin-left: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 150px;
+    flex-direction: column;
+    border: 1px solid brown;
+  }
+  .makalebir>h1{
+    text-align: center;
+    font-style: italic;
+    font-size: 39px;
+  }
+  .makalebir>p{
+    font-size: 25px;
+  }
+  /*MAKALE 2*/
+  .makaleiki{
+    display: flex;
+    background-color: bisque;
+    width: 1404px;
+    height: 1600px;
+    margin-left: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 150px;
+    flex-direction: column;
+    border: 1px solid brown;
+  }
+  .makaleiki>h1{
+    text-align: center;
+    font-style: italic;
+    font-size: 39px;
+  }
+  .makaleiki>p{
+    font-size: 25px;
+  }
+  /*MAKALE 3*/
+  .makaleuc{
+    display: flex;
+    background-color: bisque ;
+    width: 1404px;
+    height: 1200px;
+    margin-left: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 150px;
+    flex-direction: column;
+    border: 1px solid brown;
+  }
+  .makaleuc>h1{
+    text-align: center;
+    font-style: italic;
+    font-size: 39px;
+  }
+  .makaleuc>p{
+    font-size: 25px;
+  }  
+  .cerceve>.resim>.resimler img{
+    width: 1000px;
+    height: 500px;
+  }
+  .cerceve{
+    width: 1000px;
+    height: 500px;
+    margin: auto;
+    position: relative;
+    
+    overflow: hidden;
+  }
+  .resim{
+    position: absolute;
+    width: 1000%;
+    left: 0;
+    animation: slide 10s infinite;
+  }
+  .resimler{
+    width: 10%;
+    float: left;
+  }
+  @keyframes slide{
+    0%{
+      transform: translate(0px);
+    }
+    10%{
+      transform: translate(-1000px);
+    }
+    20%{
+      transform: translate(-1000px);
+    }
+    30%{
+      transform: translate(-2000px);
+    }
+    40%{
+      transform: translate(-2000px);
+    }
+    50%{
+      transform: translate(-3000px);
+    }
+    60%{
+      transform: translate(-3000px);
+    }
+    70%{
+      transform: translate(-4000px);
+    }
+    80%{
+      transform: translate(-4000px);
+    }
+  }
+  .videos{
+    margin: auto;
+    width: 800px;
+    height: 800px;
+    border: 2px solid black; 
+  }
+  .hbr{
+    display: flex;
+    margin: 50px;
+    width: 1420px;
+    height: 600px;
+    background-color: gray;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .bilim,.finans,.yasam,.spor{
+    display: flex;
+    width: 1000px;
+    height: 100px;
+    background-color: white;
+    margin: 5px;
+    justify-content: center;
+    align-items: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+    font-size: 40px;
+    color: gray;
+  }
+  .hbr>a{
+    text-decoration: none;
+  }
+
+  /*BİLİM HABERLERİ*/
+  .bilimhaberleri{
+    display: flex;
+    width: 1500px;
+    height: 1000px;
+    margin: 20px;
+    position: relative;
+    justify-content: space-around;
+    border: 2px solid black;
+  }
+  .bilim_1,.bilim_2,.bilim_3{
+    display: flex;
+    width: 450px;
+    height: 400px;
+    background-color: darkgrey;
+    margin: 20px;
+    position: relative;
+    justify-content: center;
+    font-size: 25px;
+  }
+  .bilimhaberleri img{
+    width: 100%;
+    height: 240px;
+  }
+  .bilimhaberleri>.bilim_1>.bilimbaslık_1{
+    display: flex;
+    position: absolute;
+    top: 250px;
+    text-align: center;
+  }
+  .bilimhaberleri>.bilim_2>.bilimbaslık_2{
+    display: flex;
+    position: absolute;
+    top: 250px;
+    text-align: center;
+  }
+  .bilimhaberleri>.bilim_3>.bilimbaslık_3{
+    display: flex;
+    position: absolute;
+    top: 250px;
+    text-align: center;
+  }
+
+.bilimhaberleri>.bilim_1>a{
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: darkblue;
+}
+.bilimhaberleri>.bilim_2>a{
+  position: absolute; 
+  bottom: 0px;
+  right: 0px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: darkblue;
+}
+.bilimhaberleri>.bilim_3>a{ 
+  position: absolute; 
+  bottom: 0px;
+  right: 0px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: darkblue;
+}
+
+
+
+.bilimhaberleri_1{
+   width: 1500px;
+   height: 1000px;
+   margin: 20px;
+   position: relative;
+   border: 2px solid black;
+   padding: 10px;
+   
+}
+.bilimhaberleri_1>h1{
+  text-align: center;
+    font-style: italic;
+    font-size: 39px;
+}
+.bilimhaberleri_1>p{
+  font-size: 25px;
+}
+
+
+.bilimhaberleri_2{
+  width: 1500px;
+  height: 1000px;
+  margin: 20px;
+  position: relative;
+  border: 2px solid black;
+  padding: 10px;
+}
+.bilimhaberleri_2>h1{
+  text-align: center;
+    font-style: italic;
+    font-size: 39px;
+}
+.bilimhaberleri_2>p{
+  font-size: 25px;
+}
+
+
+.bilimhaberleri_3{
+  width: 1500px;
+  height: 1000px;
+  margin: 20px;
+  position: relative;
+  border: 2px solid black;
+  padding: 10px;
+}
+.bilimhaberleri_3>h1{
+  text-align: center;
+    font-style: italic;
+    font-size: 39px;
+}
+.bilimhaberleri_3>p{
+  font-size: 25px;
+}
+/*FİNANS HABERLERİ*/
+
+.finanshaberleri{
+  display: flex;
+  width: 1500px;
+  height: 1000px;
+  margin: 20px;
+  position: relative;
+  border: 2px solid black;
+}
+.finans_1,.finans_2{
+  display: flex;
+  width: 450px;
+  height: 400px;
+  background-color: darkgrey;
+  margin: 20px;
+  position: relative;
+  justify-content: center;
+  font-size: 25px;
+
+}
+.finanshaberleri img {
+  width: 100%;
+  height: 240px;
+}
+.finanshaberleri>.finans_1>.finansbaslik_1{
+  display: flex;
+  position: absolute;
+  top: 250px;
+  text-align: center;
+}
+.finanshaberleri>.finans_2>.finansbaslik_2{
+  display: flex;
+  position: absolute;
+  top: 250px;
+  text-align: center;
+}
+.finanshaberleri>.finans_1>a{
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: darkblue;
+}
+.finanshaberleri>.finans_2>a{
+  position: absolute; 
+  bottom: 0px;
+  right: 0px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: darkblue;
+}
+.finanshaberleri_1{
+  width: 1500px;
+  height: 1000px;
+  margin: 20px;
+  position: relative;
+  border: 2px solid black;
+  padding: 10px;
+  
+}
+.finanshaberleri_1>h1{
+ text-align: center;
+   font-style: italic;
+   font-size: 39px;
+}
+.finanshaberleri_1>p{
+ font-size: 25px;
+}
+
+
+.finanshaberleri_2{
+ width: 1500px;
+ height: 700px;
+ margin: 20px;
+ position: relative;
+ border: 2px solid black;
+ padding: 10px;
+}
+.finanshaberleri_2>h1{
+ text-align: center;
+   font-style: italic;
+   font-size: 39px;
+}
+.finanshaberleri_2>p{
+ font-size: 25px;
+}
+
+/*YAŞAM HABERLERİ*/
+.yasamhaberleri{
+  display: flex;
+  width: 1500px;
+  height: 1000px;
+  margin: 20px;
+  position: relative;
+  border: 2px solid black;
+}
+.yasam_1,.yasam_2{
+  display: flex;
+  width: 450px;
+  height: 400px;
+  background-color: darkgrey;
+  margin: 20px;
+  position: relative;
+  justify-content: center;
+  font-size: 25px;
+
+}
+.yasamhaberleri img {
+  width: 100%;
+  height: 240px;
+}
+.yasamhaberleri>.yasam_1>.yasambaslik_1{
+  display: flex;
+  position: absolute;
+  top: 250px;
+  text-align: center;
+}
+.yasamhaberleri>.yasam_2>.yasambaslik_2{
+  display: flex;
+  position: absolute;
+  top: 250px;
+  text-align: center;
+}
+.yasamhaberleri>.yasam_1>a{
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: darkblue;
+}
+.yasamhaberleri>.yasam_2>a{
+  position: absolute; 
+  bottom: 0px;
+  right: 0px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: darkblue;
+}
+.yasamhaberleri_1{
+  width: 1500px;
+  height: 1000px;
+  margin: 20px;
+  position: relative;
+  border: 2px solid black;
+  padding: 10px;
+  
+}
+.yasamhaberleri_1>h1{
+ text-align: center;
+   font-style: italic;
+   font-size: 39px;
+}
+.yasamhaberleri_1>p{
+ font-size: 25px;
+}
+
+
+.yasamhaberleri_2{
+ width: 1500px;
+ height: 500px;
+ margin: 20px;
+ position: relative;
+ border: 2px solid black;
+ padding: 10px;
+}
+.yasamhaberleri_2>h1{
+ text-align: center;
+   font-style: italic;
+   font-size: 39px;
+}
+.yasamhaberleri_2>p{
+ font-size: 25px;
+}
+/*SPOR HABERLERİ*/
+.sporhaberleri{
+  display: flex;
+  width: 1500px;
+  height: 1000px;
+  margin: 20px;
+  position: relative;
+  border: 2px solid black;
+}
+.spor_1,.spor_2{
+  display: flex;
+  width: 450px;
+  height: 400px;
+  background-color: darkgrey;
+  margin: 20px;
+  position: relative;
+  justify-content: center;
+  font-size: 25px;
+}
+.sporhaberleri img {
+  width: 100%;
+  height: 240px;
+}
+.sporhaberleri>.spor_1>.sporbaslik_1{
+  display: flex;
+  position: absolute;
+  top: 250px;
+  text-align: center;
+}
+.sporhaberleri>.spor_2>.sporbaslik_2{
+  display: flex;
+  position: absolute;
+  top: 250px;
+  text-align: center;
+}
+.sporhaberleri>.spor_1>a{
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: darkblue;
+}
+.sporhaberleri>.spor_2>a{
+  position: absolute; 
+  bottom: 0px;
+  right: 0px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: darkblue;
+}
+.sporhaberleri_1{
+  width: 1500px;
+  height: 500px;
+  margin: 20px;
+  position: relative;
+  border: 2px solid black;
+  padding: 10px;
+}
+.sporhaberleri_1>h1{
+ text-align: center;
+   font-style: italic;
+   font-size: 39px;
+}
+.sporhaberleri_1>p{
+ font-size: 25px;
+}
+.sporhaberleri_2{
+ width: 1500px;
+ height: 200px;
+ margin: 20px;
+ position: relative;
+ border: 2px solid black;
+ padding: 10px;
+}
+.sporhaberleri_2>h1{
+  text-align: center;
+  font-style: italic;
+  font-size: 39px;
+}
+.sporhaberleri_2>p{
+  font-size: 25px;
+}
